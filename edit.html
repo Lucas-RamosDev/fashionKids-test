@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - FashionKids</title>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/edit.css">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="assets/fonts/style.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="edit">
+
+    <header>
+
+      <nav class="content">
+
+        <img src="/assets/logo.png" alt="logo">
+        <a href="/login.html">ENCERRAR</a>
+
+      </nav>
+
+    </header>
+
+ 
+    
+    <main class="content">
+
+      <div class="title-edit">
+
+        <h1>Editar Produto</h1>
+
+        <a href="#" onclick="Modal.open()">
+          <div class="icon-trash-2"></div>
+        </a>
+
+      </div>
+
+
+      <form action="">
+
+        <div class="form-container">
+
+          <h2>Código: 102030</h2>
+
+          <div class="img-preview">
+
+            <img id="preview"src="/assets/conjunto_babys.svg" alt="pré vizualização">
+
+          </div>
+
+          <label for="upload-image" class="upload-image">Carregar imagem</label>
+          <input type="file" src="" id="upload-image">
+  
+            
+          <label for="name-product" class="sr-only">Nome do Produto</label>
+          <input id="name-product" type="text" placeholder="Nome do Produto" value="Conjunto infantil" >
+  
+          <label for="description" class="sr-only">Descrição</label>
+          <input id="description" type="passtextword" placeholder="Descrição" value="Conjunto infantil para crianças" >
+  
+          <label for="color" class="sr-only">Cor</label>
+          <input id="color" type="passwtextord" placeholder="Cor" value="Preto e amarelo" >
+  
+          <label for="size" class="sr-only">Tamanho</label>
+          <input id="size" type="text" placeholder="Tamanho" value="32" >
+  
+          <label for="cost" class="sr-only">Custo</label>
+          <input id="cost" type="number" placeholder="Custo" value="40.00" >
+  
+          <label for="sale-price" class="sr-only">Preço de Venda</label>
+          <input id="sale-price" type="number" placeholder="Preço de Venda" value="80.00" >
+  
+          <h2>Margem: 180%</h2>
+  
+          <h2>Preço Sugerido: R$ 89,90</h2>
+
+        </div>
+
+        <div class="action">
+            
+          <a href="/home.html">Cancelar</a>
+          <button>Salvar</button>
+          
+        </div>
+
+      </form>
+      
+    </main>
+
+
+
+
+
+
+
+    <div class="modal-filter">
+
+      <div class="modal">
+
+        <div class="form">
+
+          <div class="header">
+
+            <img src="/assets/trash.svg" alt="filtro">
+            <h2>Deseja mesmo deletar este produto?</h2>
+
+          </div>
+            
+
+          <form action="#">
+
+            <div class="action-modal">
+              <a href="#" onclick="Modal.close()" class="button-cancel">Cancelar</a>
+              <button>Deletar</button>
+            </div>
+
+          </form>
+
+        </div>
+
+         
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <script>
+
+    const Modal = {
+
+      open() {
+        
+        document
+          .querySelector('.modal-filter')
+          .classList.add('active')
+      },
+
+      close() {
+        document
+          .querySelector('.modal-filter')
+          .classList.remove('active')
+      }
+    }
+
+    /* realiza o preview da imagem selecionada */
+    function readImage() {
+
+      if (this.files && this.files[0]) {
+
+        const file = new FileReader();
+
+        file.onload = function(e) {
+          document.getElementById("preview").src = e.target.result;
+        }
+
+        file.readAsDataURL(this.files[0]);
+      
+      }
+
+    }
+
+    document.getElementById("upload-image").addEventListener("change", readImage, false);
+
+  </script>
+
+  
+</body>
+
+</html>

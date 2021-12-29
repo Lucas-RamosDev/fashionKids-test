@@ -1,0 +1,461 @@
+.content {
+  max-width: 95%;
+  margin: 0 auto;
+
+}
+
+
+/* ==================== ### HEADER ### =========================== */
+
+#home header {
+
+  display: flex;
+
+  background: var(--color-primary);
+  height: 6rem;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#home header nav {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#home header img {
+  width: auto;
+}
+
+#home header a {
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  background: var(--color-ligth);
+  color: var(--color-primary);
+  /*border: 1px solid var(--color-white);*/
+
+  padding: 0.9rem 2rem;
+  /*height: 3rem;*/
+
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  border-radius: 0.8rem;
+}
+
+#home header a:hover {
+  filter: brightness(1.1) /*"brightness" -. aplica um brilho */
+}
+
+/* ==================== ### SEARCH ### =========================== */
+
+#home .search {
+
+  padding: 2rem 0;
+  margin-top: 8rem;
+
+}
+
+#home .search form {
+  display: flex;
+  justify-content: center;
+  height: 4.5rem;
+}
+
+#home .search form input {
+
+  border: 0.1rem solid var(--color-grey-light);
+  padding: 0 3rem;
+
+  height: 4.5rem;
+  width: 100%;
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+#home .search form button{
+  background: var(--color-ligth);
+  color: var(--color-primary);
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+#home .search form button:hover {
+  filter: brightness(90%);
+}
+
+#home .img-search {
+  width: 1.5rem;
+}
+
+#home .actions-buttons {
+  display: flex;
+  justify-content:space-between;
+  margin-top: 2rem;
+  
+}
+
+#home .search .actions-buttons .button-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 0.8rem;
+  background: var(--color-ligth);
+}
+
+#home .search .actions-buttons .button-filter:hover {
+  filter: brightness(90%);
+}
+
+#home .search .actions-buttons .button-filter .icon-filter{
+  color: var(--color-primary);
+  width: auto;
+}
+
+
+#home .search .actions-buttons .button-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  padding: 0.6rem 2rem;
+  color: var(--color-primary);
+  background: var(--color-ligth);
+  border-radius: 0.8rem;
+
+}
+
+#home .search .actions-buttons .button-register:hover {
+  filter: brightness(95%);
+}
+
+#home .search .actions-buttons .button-register img {
+ 
+  width: 2rem;
+  background: var(--color-primary);
+  border-radius: 0.4rem;
+}
+
+
+
+/* ==================== ### CARDS ### =========================== */
+
+#home main {
+  color: var(--color-dark);
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+#home main .card {
+  display: flex;
+
+  margin-bottom: 1rem;
+}
+
+#home main .card .card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  height: 9rem;
+  border: 0.1rem solid var(--color-grey-light);
+  border-radius: 0.8rem 0 0 0.8rem;
+
+  width: 100%;
+}
+
+#home main .card .card-container:hover {
+  cursor: pointer;
+  background: #EBEAFF;
+}
+
+#home main .card .card-container .clothes {
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 0.8rem 0 0 0.8rem;
+  width: 6rem;
+}
+
+#home main .card .card-container .clothes img {
+  width: 4rem;
+}
+
+
+#home main .card .card-container .details {
+  display: flex;
+  gap:0.4rem;
+
+}
+
+#home main .card .card-container .details .column:first-child {
+  width: 16rem;
+}
+
+#home main .card .card-container .details .column:last-child {
+  text-align: center;
+  width: 8rem;
+}
+
+
+#home main .card .card-container .details .column .code {
+  padding: 0.8rem 0;
+}
+
+#home main .card .card-container .details .column .description {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+
+#home main .card .card-container .details .column .price {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.8rem 0;
+}
+
+#home main .card .card-container .details .column .status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+
+  color: var(--color-green);
+
+}
+
+
+#home main .card .card-container .details .column .status.sold {
+  color: var(--color-red);
+}
+
+#home main .card .sell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding: 0 1.5rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+  color: var(--color-dark-second);
+  background: var(--color-ligth);
+  font-size: 3rem;
+}
+
+#home main .card .sell:hover {
+  filter: brightness(95%);
+
+}
+
+
+/* ==================== ### MODAL - FILTER ### =========================== */
+
+
+.modal-filter {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-filter.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  width: 80%;
+  max-width: 50rem;
+
+  background: #F0f2F5;
+}
+
+.modal-filter.active .modal .form .header{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.modal-filter.active .modal .form .header img {
+
+  width: auto;
+  margin-bottom: 2rem;
+}
+
+.modal-filter.active .modal .form form select{
+
+  border: 0.1rem solid var(--color-grey-light);
+  padding: 0 5rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 5rem;
+  border-radius: 0.8rem;
+}
+
+.modal-filter.active .modal .form form .action-modal{
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+
+}
+
+.modal-filter.active .modal .form form .action-modal a {
+
+  padding: 2rem 3rem;
+  border-radius: 0.8rem;
+
+  color: var(--color-dark);
+  background: var(--color-grey-light);
+  filter: brightness(90%);
+
+}
+
+.modal-filter.active .modal .form form .action-modal a:hover {
+  filter: brightness(85%);
+}
+
+.modal-filter.active .modal .form form .action-modal button {
+
+  padding: 0 1rem;
+  border-radius: 0.8rem;
+
+  background: var(--color-red);
+  color:var(--color-white)
+
+}
+
+.modal-filter.active .modal .form  form .action-modal button:hover {
+  filter: brightness(90%);
+}
+
+/* ### --- --- --- --- --- --- --- --- --- --- --- ### */
+/* ### --- --- --- MEDIA QUERIES --- --- --- ---   ### */
+/* ### --- medium large devices: mais de 980px --- ### */
+/* ### --- --- --- --- --- --- --- --- --- --- --- ### */
+
+@media(min-width: 980px) {
+
+  .content {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  /* ==================== ### SEARCH ### =========================== */
+
+  #home .search {
+
+    display: flex;
+    justify-content: space-between;  
+  }
+
+  #home .search form {
+    width: 70rem;
+  }
+
+  #home .search form input {
+    padding: 0 4rem;
+  }
+
+  #home .actions-buttons {
+    display: flex;
+    gap: 4rem;
+
+    margin-top: 0;
+    
+  }
+
+  /* ==================== ### CARDS ### =========================== */
+  
+  #home main .card .card-container {
+    height: 8rem;
+  }  
+  
+
+  #home main .card .card-container .clothes {
+    width: 10rem;
+  }
+
+  #home main .card .card-container .clothes img {
+    width: 5rem;
+  }
+
+
+  #home main .card .card-container .details {
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+    width: 100%;
+  }
+  
+  #home main .card .card-container .details .column:first-child {
+
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+
+    width: auto;
+  }
+  
+  #home main .card .card-container .details .column:last-child {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+    width: auto;
+  }
+
+  #home main .card .card-container .details .column .code {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  #home main .card  .card-container .details .column .price {
+    display: flex;
+    align-items: center;
+  }
+
+  #home main .card .sell {
+    height: 8rem;
+  }
+
+
+}

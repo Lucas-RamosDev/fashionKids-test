@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - FashionKids</title>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/home.css">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="assets/fonts/style.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="home">
+
+    <header>
+
+      <nav class="content">
+
+        <img src="/assets/logo.png" alt="logo">
+        <a href="/login.html">ENCERRAR</a>
+
+      </nav>
+
+    </header>
+
+    <div class="search content">
+    
+      <form action="">
+
+        <label for="search-input" class="sr-only">Localizar</label>
+        <input id="search-input" type="text">
+
+        <button class="search-button">
+          <div class="icon-search"></div>
+        </button>
+        
+      </form>
+
+      <div class="actions-buttons">
+
+        <a href="#" onclick="Modal.open()" class="button-filter">
+          <div class="icon-filter"></div>
+        </a>
+
+        <a href="/register.html" class="button-register" >
+          <img src="/assets/plus.svg" alt="Cadastrar">
+          CADASTRAR
+        </a>
+
+      </div>
+
+    </div>
+    
+    <main class="content">
+
+      <div class="card">
+
+        <a href="/edit.html" class="card-container">
+          <div class="clothes">
+            <img src="/assets/conjunto_babys.svg" alt="Conjunto">
+          </div>
+          <div class="details">
+            <div class="column">
+              <div class="code">B100033</div>
+              <div class="description">Conjunto Camiseta shark bermuda azul</div>
+            </div>
+            <div class="column">
+                <div class="price">R$ 1.180,00</div>
+                <div class="status ">Disponível</div>
+            </div>
+          </div>
+        </a>
+        <button class="sell">
+          $
+        </button>
+
+      </div>
+
+      <div class="card">
+
+        <a href="/edit.html" class="card-container">
+          <div class="clothes">
+            <img src="/assets/clothes/girls-1.png" alt="Conjunto">
+          </div>
+          <div class="details">
+            <div class="column">
+              <div class="code">B100033</div>
+              <div class="description">Conjunto Camiseta shark bermuda azul</div>
+            </div>
+            <div class="column">
+                <div class="price">R$ 1.180,00</div>
+                <div class="status sold">Vendido</div>
+            </div>
+          </div>
+        </a>
+        <button class="sell">
+          $
+        </button>
+
+      </div>
+
+      <div class="card">
+
+        <a href="/edit.html" class="card-container">
+          <div class="clothes">
+            <img src="/assets/conjunto_boys.svg" alt="Conjunto">
+          </div>
+          <div class="details">
+            <div class="column">
+              <div class="code">B100033</div>
+              <div class="description">Conjunto Camiseta shark bermuda azul</div>
+            </div>
+            <div class="column">
+                <div class="price">R$ 1.180,00</div>
+                <div class="status ">Disponível</div>
+            </div>
+          </div>
+        </a>
+        <button class="sell">
+          $
+        </button>
+
+      </div>
+
+    </main>
+
+
+
+
+
+
+    <div class="modal-filter">
+
+      <div class="modal">
+
+        <div class="form">
+
+          <div class="header">
+
+            <img src="/assets/filter.svg" alt="filtro">
+            <h2>Selecione um Filtro</h2>
+
+          </div>
+            
+
+          <form action="#">
+
+            <select name="select-filter">
+              <option value=""></option>
+              <option value="available">Disponível</option>
+              <option value="sold">Vendido</option>
+              <option value="all">Todos</option>
+            </select>
+
+            <div class="action-modal">
+              <a href="#" onclick="Modal.close()" class="button-cancel">Cancelar</a>
+              <button>Aplicar Filtro</button>
+            </div>
+
+          </form>
+
+        </div>
+
+         
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <script>
+
+    const Modal = {
+
+      open() {
+        
+        document
+          .querySelector('.modal-filter')
+          .classList.add('active')
+      },
+
+      close() {
+        document
+          .querySelector('.modal-filter')
+          .classList.remove('active')
+      }
+    }
+
+  </script>
+
+  
+</body>
+
+</html>

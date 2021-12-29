@@ -1,0 +1,197 @@
+.content {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+
+/* ==================== ### HEADER ### =========================== */
+
+#register header {
+
+  display: flex;
+
+  background: var(--color-primary);
+  height: 6rem;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#register header nav {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#register header img {
+  width: auto;
+}
+
+#register header a {
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  background: var(--color-ligth);
+  color: var(--color-primary);
+  /*border: 1px solid var(--color-white);*/
+
+  padding: 0.9rem 2rem;
+  /*height: 3rem;*/
+
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  border-radius: 0.8rem;
+}
+
+#register header a:hover {
+  filter: brightness(1.1) /*"brightness" -. aplica um brilho */
+}
+
+/* ==================== ### MAIN ### =========================== */
+
+#register main {
+  margin-top: 7rem;
+}
+
+#register main h1 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+/* ----- FORM REGISTER ------- */
+
+#register main form {
+
+  height: 85rem;
+}
+
+#register main form .form-container {
+  display:flex;
+  flex-direction: column;
+
+  padding: 0 2rem;
+  margin-top: 2rem ;
+
+  border: 0.1rem solid var(--color-grey-light);
+  border-radius: 0.6rem;
+}
+
+#register main form .form-container h2 {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--color-dark);
+}
+
+#register main form .form-container .img-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 0.1rem solid var(--color-ligth);
+  border-bottom: none;
+
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+
+#register main form .form-container .img-preview img {
+  width: 12.0rem
+}
+
+#register main form .form-container input[type="file"] {
+  display: none;
+}
+
+#register main form .form-container .upload-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0.1rem solid var(--color-grey-light);
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  height: 5rem;
+  border-radius: 0.6rem;
+
+  background: var(--color-ligth);
+  color: var(--color-dark);
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#register main form .form-container .upload-image:hover{
+  filter: brightness(1.1)
+} 
+
+#register main form .form-container input {
+  border: 0.1rem solid var(--color-grey-light);
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  height: 5rem;
+  border-radius: 0.6rem;
+}
+
+#register main form .action {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 20rem;
+}
+
+#register main form .action a {
+
+  padding: 2rem 4rem;
+  border-radius: 0.8rem;
+
+  color: var(--color-dark);
+  background: var(--color-grey-light);
+  filter: brightness(90%);
+}
+
+#register main form .action a:hover {
+  filter: brightness(85%);
+}
+
+#register main form .action button {
+  padding: 0 5rem;
+  border-radius: 0.8rem;
+
+  background: var(--color-ligth);
+  color:var(--color-black)
+}
+
+#register main form .action button:hover {
+  filter: brightness(85%);
+}
+
+/* ### --- --- --- --- --- --- --- --- --- --- --- ### */
+/* ### --- --- --- MEDIA QUERIES --- --- --- ---   ### */
+/* ### --- medium large devices: mais de 980px --- ### */
+/* ### --- --- --- --- --- --- --- --- --- --- --- ### */
+
+@media(min-width: 980px) {
+
+  .content {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+/* ==================== ### MAIN ### =========================== */
+
+  #register main form {
+    padding: 0 20rem;
+  }
+
+}

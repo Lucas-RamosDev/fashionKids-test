@@ -1,0 +1,319 @@
+.content {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+
+/* ==================== ### HEADER ### =========================== */
+
+#edit header {
+
+  display: flex;
+
+  background: var(--color-primary);
+  height: 6rem;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#edit header nav {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#edit header img {
+  width: auto;
+}
+
+#edit header a {
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  background: var(--color-ligth);
+  color: var(--color-primary);
+  /*border: 1px solid var(--color-white);*/
+
+  padding: 0.9rem 2rem;
+  /*height: 3rem;*/
+
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  border-radius: 0.8rem;
+}
+
+#edit header a:hover {
+  filter: brightness(1.1) /*"brightness" -. aplica um brilho */
+}
+
+/* ==================== ### MAIN ### =========================== */
+
+#edit main {
+  margin-top: 7rem;
+}
+
+#edit main .title-edit {
+
+  display: flex;
+  justify-content:space-around;
+
+}
+
+#edit main h1 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+#edit main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 0.8rem;
+  background: var(--color-ligth);
+  color: var(--color-dark);
+}
+
+/* ----- FORM REGISTER ------- */
+
+#edit main form {
+
+  height: 85rem;
+}
+
+#edit main form .form-container {
+  display:flex;
+  flex-direction: column;
+
+  padding: 0 2rem;
+  margin-top: 2rem ;
+
+  border: 0.1rem solid var(--color-grey-light);
+  border-radius: 0.6rem;
+}
+
+#edit main form .form-container h2 {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--color-dark);
+}
+
+#edit main form .form-container .img-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 0.1rem solid var(--color-ligth);
+  border-bottom: none;
+
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+
+#edit main form .form-container .img-preview img {
+  width: 12.0rem
+}
+
+#edit main form .form-container input[type="file"] {
+  display: none;
+}
+
+#edit main form .form-container .upload-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0.1rem solid var(--color-grey-light);
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  height: 5rem;
+  border-radius: 0.6rem;
+
+  background: var(--color-ligth);
+  color: var(--color-dark);
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#edit main form .form-container .upload-image:hover{
+  filter: brightness(1.1)
+} 
+
+#edit main form .form-container input {
+  border: 0.1rem solid var(--color-grey-light);
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  height: 5rem;
+  border-radius: 0.6rem;
+}
+
+#edit main form .action {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 20rem;
+}
+
+#edit main form .action a {
+
+  padding: 2rem 4rem;
+  border-radius: 0.8rem;
+
+  color: var(--color-dark);
+  background: var(--color-grey-light);
+  filter: brightness(90%);
+}
+
+#edit main form .action a:hover {
+  filter: brightness(85%);
+}
+
+#edit main form .action button {
+  padding: 0 5rem;
+  border-radius: 0.8rem;
+
+  background: var(--color-ligth);
+  color:var(--color-black)
+}
+
+#edit main form .action button:hover {
+  filter: brightness(85%);
+}
+
+
+/* ==================== ### MODAL - TRASH ### =========================== */
+
+.modal-filter {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-filter.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  width: 80%;
+  max-width: 50rem;
+
+  background: #F0f2F5;
+}
+
+.modal-filter.active .modal .form .header{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.modal-filter.active .modal .form .header img {
+
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.modal-filter.active .modal .form form select {
+
+  border: 0.1rem solid var(--color-grey-light);
+  padding: 0 5rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 5rem;
+  border-radius: 0.8rem;
+}
+
+.modal-filter.active .modal .form form .action-modal{
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+
+}
+
+.modal-filter.active .modal .form form .action-modal a {
+
+  padding: 2rem 3rem;
+  border-radius: 0.8rem;
+
+  color: var(--color-dark);
+  background: var(--color-grey-light);
+  filter: brightness(90%);
+
+}
+
+.modal-filter.active .modal .form form .action-modal a:hover {
+  filter: brightness(85%);
+}
+
+.modal-filter.active .modal .form form .action-modal button {
+
+  padding: 0 3.5rem;
+  border-radius: 0.8rem;
+
+  background: var(--color-red);
+  color:var(--color-white)
+
+}
+
+.modal-filter.active .modal .form  form .action-modal button:hover {
+  filter: brightness(90%);
+}
+
+/* ### --- --- --- --- --- --- --- --- --- --- --- ### */
+/* ### --- --- --- MEDIA QUERIES --- --- --- ---   ### */
+/* ### --- medium large devices: mais de 980px --- ### */
+/* ### --- --- --- --- --- --- --- --- --- --- --- ### */
+
+@media(min-width: 980px) {
+
+  .content {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+/* ==================== ### MAIN ### =========================== */
+
+
+
+
+  #edit main form {
+    padding: 0 20rem;
+  }
+
+}
